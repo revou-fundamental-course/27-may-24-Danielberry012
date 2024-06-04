@@ -24,6 +24,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #333S;
 }
 
 header nav ul li {
