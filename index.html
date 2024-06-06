@@ -7,8 +7,9 @@
     <title>Tugas Daniel</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
-
+<script src="scrpt.js"></script>
 <body>
     <!-- navbar-->
     <header>
@@ -32,11 +33,13 @@
 
     <main>
         <!-- conten 1 -->
-        <section class="welcome">
-            <h1>Hi, Welcome To Website</h1>
-            <p>Ini adalah website latihan pertama</p>
+        <section>
+            <div class="welcome">
+                <h1>Hi, Welcome To Website</h1>
+                <p>Ini adalah website latihan pertama</p>
+            </div>
             <div class="banner">
-                <img src="assets/1d7939b75e1f70.jpg" alt="Banner" width="1366" height="378">
+                <img src="assets/1d7939b75e1f70.jpg" alt="Banner" width="1366px" height="378px">
             </div>
         </section>
 
@@ -48,16 +51,22 @@
             <h2>Our Facilitation</h2>
             <div class="facilities">
                 <div class="facility">
-                    <img src="assets/pigy.jpg" alt="Professional Teacher">
-                    <p>Professional Teacher</p>
+                    <div class="circle">
+                        <img src="assets/instagram.jpg" alt="My instagram">
+                    </div>
+                    <p>My instagram</p>
                 </div>
                 <div class="facility">
-                    <img src="assets/dog.jpg" alt="Sport Field">
-                    <p>Sport Field</p>
+                    <div class="circle">
+                        <img src="assets/facebook.jpg" alt="My facebook">
+                    </div>
+                    <p>My facebook</p>
                 </div>
                 <div class="facility">
-                    <img src="assets/sheep.jpg" alt="Classroom">
-                    <p>Classroom</p>
+                    <div class="circle">
+                        <img src="assets/linked.jpg" alt="My linked">
+                    </div>
+                    <p>My Linked</p>
                 </div>
             </div>
         </section>
@@ -68,28 +77,31 @@
         <section class="contact">
             <h2>Message Us</h2>
             <div class="contract-container">
-                            <form>
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name">
-                <label for="date">Tanggal Lahir:</label>
-                <input type="date" id="date" name="date">
-                <label>Jenis Kelamin:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Laki-Laki</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Perempuan</label>
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <div class="info">
-                <p>Current time: Fri Jun 17 2022 11:27:28 GMT+0100</p>
-                <p>Nama: Daniel</p>
-                <p>Tanggal Lahir: 02/05/1990</p>
-                <p>Jenis Kelamin: Laki-Laki</p>
-                <p>Pesan: Lagi Belajar buat Website</p>
+                <form id="message-form">
+                    <p><label for="name">Nama:</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+                    <p><label for="date">Tanggal Lahir:</label>
+                        <input type="date" id="date" name="date">
+                    </p>
+                    <p><label>Jenis Kelamin:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Perempuan</label>
+                    </p>
+                    <p><label for="message">Pesan:</label></p>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="message-output">
+                    <p>Current time: Fri Jun 17 2022 11:27:28 GMT+0100</p>
+                    <p>Nama: <span id="output-name"></span></p>
+                    <p>Tanggal Lahir: <span id="output-date"></p>
+                    <p>Jenis Kelamin: <span id="output-gender"></span></p>
+                    <p>Pesan: <span id="output-message"></span></p>
+                </div>
             </div>
-        </div>
         </section>
         <!-- conten 3 selesai-->
 
